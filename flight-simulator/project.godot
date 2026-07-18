@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Flight Simulator"
-config/features=PackedStringArray("4.6", "Forward Plus")
+run/main_scene="res://node_2d.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=4
+window/stretch/mode="canvas_items"
 
 [physics]
 

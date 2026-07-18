@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyeaoa0r5pmsv"]
+
+[ext_resource type="Script" uid="uid://dnbh8csdebaen" path="res://wingschoice.gd" id="1_5tr5v"]
+[ext_resource type="Texture2D" uid="uid://bytbhp3g41137" path="res://base assets for flight simulator/Gemini_Generated_Image_kscc7qkscc7qkscc.png" id="2_lcipk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fmwtr"]
+texture = ExtResource("2_lcipk")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_left = -0.324
+anchor_top = -0.364
+anchor_right = 0.661
+anchor_bottom = 0.613
+offset_left = 378.248
+offset_top = 244.872
+offset_right = 0.527954
+offset_bottom = -0.22403
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5tr5v")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -397.0
+offset_top = -239.0
+offset_right = 767.0
+offset_bottom = 411.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fmwtr")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(185, 89)
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -391.0
+offset_top = 223.0
+offset_right = 765.0
+offset_bottom = 405.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 491.0
+offset_top = 238.0
+offset_right = 706.0
+offset_bottom = 292.0
+text = "double decker wings"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 247.0
+offset_right = 472.0
+offset_bottom = 287.0
+text = "Huge wings"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = -18.0
+offset_top = 238.0
+offset_right = 206.0
+offset_bottom = 283.0
+text = "Mid Wings"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = -345.0
+offset_top = 239.0
+offset_right = -100.0
+offset_bottom = 286.0
+text = "Small wings"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]

@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://s4kp6xdbevi6"]
+
+[ext_resource type="Texture2D" uid="uid://g3srvxugscjw" path="res://base assets for flight simulator/Screenshot 2026-07-18 135507.png" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://dt0cqu4pnhpio" path="res://node_2d.gd" id="1_epypp"]
+[ext_resource type="FontFile" uid="uid://c6f11718guqkw" path="res://pixelated.ttf" id="2_epypp"]
+[ext_resource type="FontFile" uid="uid://dc6bqsowfhrgt" path="res://base assets for flight simulator/prevalent/Prevalent Demo.otf" id="3_0hol4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0hol4"]
+texture = ExtResource("1_0e48y")
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_epypp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 682.0
+offset_bottom = 385.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_0hol4")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 2.0
+offset_right = 617.0
+offset_bottom = 248.0
+theme_override_colors/font_color = Color(0.811765, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_0hol4")
+theme_override_font_sizes/font_size = 70
+text = "HOT and STEAMY FLIGHT 
+SIMULATOR"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(342, 197)
+zoom = Vector2(1.695, 1.695)
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 260.0
+offset_right = 409.0
+offset_bottom = 326.0
+
+[node name="button" type="Button" parent="Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_epypp")
+text = "START SIMULATOR"
+
+[node name="button2" type="Button" parent="Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_epypp")
+text = "EXIT"
+
+[connection signal="pressed" from="Container/button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Container/button2" to="." method="_on_button_2_pressed"]

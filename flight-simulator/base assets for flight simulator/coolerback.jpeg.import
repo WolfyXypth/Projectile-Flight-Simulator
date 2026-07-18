@@ -2,16 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://batpd5k83yajo"
-path="res://.godot/imported/tail of double decker plane.png-efa426009fca1d1d8ef6a81cfb64f662.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://o5a0rh2rkf07"
+valid=false
 
 [deps]
 
-source_file="res://base assets for flight simulator/parts of double decker plane/tail of double decker plane.png"
-dest_files=["res://.godot/imported/tail of double decker plane.png-efa426009fca1d1d8ef6a81cfb64f662.ctex"]
+source_file="res://base assets for flight simulator/coolerback.jpeg"
 
 [params]
 

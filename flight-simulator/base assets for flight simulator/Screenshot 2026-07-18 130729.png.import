@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://batpd5k83yajo"
-path="res://.godot/imported/tail of double decker plane.png-efa426009fca1d1d8ef6a81cfb64f662.ctex"
+uid="uid://c5b0bv2mxmbcq"
+path="res://.godot/imported/Screenshot 2026-07-18 130729.png-0b6061711e19c96787da5a0b043652fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://base assets for flight simulator/parts of double decker plane/tail of double decker plane.png"
-dest_files=["res://.godot/imported/tail of double decker plane.png-efa426009fca1d1d8ef6a81cfb64f662.ctex"]
+source_file="res://base assets for flight simulator/Screenshot 2026-07-18 130729.png"
+dest_files=["res://.godot/imported/Screenshot 2026-07-18 130729.png-0b6061711e19c96787da5a0b043652fa.ctex"]
 
 [params]
 
