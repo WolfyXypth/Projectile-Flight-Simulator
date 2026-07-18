@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://oa1nqtnxosic"]
+
+[ext_resource type="Texture2D" uid="uid://bmp2mcgmrmsyn" path="res://base assets for flight simulator/Parts of blended wing plane/Screenshot_2026-07-18_130708.png" id="1_tjn2e"]
+[ext_resource type="Script" uid="uid://dwej72ldj4jtd" path="res://rigid_body_2d.gd" id="1_w0p2i"]
+[ext_resource type="Texture2D" uid="uid://blle0dk405dkq" path="res://base assets for flight simulator/Parts of blended wing plane/actualcargoplane.png" id="2_w0p2i"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w0p2i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7a4el"]
+radius = 13.0
+height = 98.0
+
+[node name="Node2D" type="Node2D" unique_id=1535480668]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=622625695]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=334062536]
+shape = SubResource("WorldBoundaryShape2D_w0p2i")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1190093863]
+position = Vector2(1402.4999, 79)
+scale = Vector2(6.4855404, 0.5325444)
+texture = ExtResource("1_tjn2e")
+
+[node name="Plane2D" type="RigidBody2D" parent="." unique_id=1003756894]
+position = Vector2(5, -997)
+mass = 1000.0
+linear_velocity = Vector2(150, 0)
+linear_damp = 1.0
+script = ExtResource("1_w0p2i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plane2D" unique_id=1666862956]
+position = Vector2(1, 2)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_7a4el")
+
+[node name="Sprite2D" type="Sprite2D" parent="Plane2D" unique_id=775972313]
+position = Vector2(-9, -3.0000257)
+scale = Vector2(0.15606242, 0.23684213)
+texture = ExtResource("2_w0p2i")
+flip_h = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=665421827]
+zoom = Vector2(0.1, 0.1)
